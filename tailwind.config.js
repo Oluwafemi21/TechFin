@@ -3,21 +3,14 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        orange:{
-          light:'#F89954',
-          dark:'#F8964F'
-        },
-        brown:{
-          light:'#502F11',
-          medium:'#562E08',
-          dark:'#4D2D10'
-        },
-        underlineColor:'#F6EDDB',
-        circle:'#FFEDDC',
-        light_pink:'#FFF8F2'
+        lightBlue:'#99C2FF',
+        darkBlue: '#032343',
+        lightGrey:'#26262B',
+        darkGrey:'#1E1F21',
+        dirtywhite:'#6D6D6D',
       },
       fontFamily:{
-        'body':['Archivo'],
+        'body':['Space Grotesk'],
       }
     },
   },

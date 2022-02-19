@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    @apply bg-black rounded-full text-white;
+}
+
+.tab-btn{
+    @apply py-2.5 px-8 hover:bg-black hover:rounded-full hover:text-white cursor-pointer transition ease-in-out transition-[backgroundColor] delay-150;
+}
+
+.btn{
+    @apply px-6 py-3 rounded-full cursor-pointer bg-lightGrey text-white hover:bg-gray-100 hover:text-black;
+}

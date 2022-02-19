@@ -8,7 +8,67 @@
   <link href="public/style.css" rel="stylesheet">
   <title>TechFin</title>
 </head>
-<body>
-  <h4 class="text-4xl">This is Femi <span class="text-blue-400">Olukoya's</span> Website</h4>
+<body class="bg-black h-screen text-white font-body">
+  <header class="container mx-auto w-[90%]">
+    <nav class="flex items-center justify-between py-6">
+
+      <div class="flex items-center space-x-2">
+        <img src="assets/logo.png" alt="logo">
+        <span class="text-white font-bold text-2xl ">TechFin</span>
+      </div>
+
+      <p class="text-sm">Sign up and get up to 20% Bonus on Referrals</p>
+
+      <div class="flex items-center space-x-10 text-sm">
+        <button class="cursor-pointer hover:text-dirtywhite">Login</button>
+        <button class="btn font-bold">GET THE APP</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="relative max-h-full">
+    <div class="w-[82%] mx-auto flex items-center justify-between gap-18">
+      <!-- Grid 1 -->
+      <div class="w-1/2 pt-12">
+        <div class="flex items-center space-x-3 pb-5">
+          <button class="btn border border-dirtywhite">NEW UPDATE</button>
+          <p>Introducing wallets but for ACH</p>
+        </div>
+        <div class="relative">
+          <h1 class="text-7xl">ACH E-wallet in your pockets <span class="text-5xl">&#129297;</span> </h1>
+          <img class="absolute right-16" src="assets/images/vector2.png" alt="vector2">
+          <p class="text-sm max-w-[491px] py-8">Just set it and forget it-no more worrying about getting payments late We process transactions in 3x108 m/s</p>
+          <div class="flex items-center space-x-11">
+            <button class="btn font-medium uppercase"><span class="pr-2">&#128522;</span>Get our app</button>
+            <button class="text-dirtywhite hover:text-white">See how it works</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid 2 -->
+      <div class="w-1/2 pt-10">
+        <div class="relative flex items-center justify-center">
+          <img class="h-[340px]"src="assets/images/Ellipse 1.png" alt="blue-circle">
+          <img  class="absolute top-24 h-[340px]"src="assets/images/hero-img.png" alt="hero-img">
+        </div>
+      </div>
+    </div>
+
+    <img class="absolute -bottom-36 left-8" src="assets/images/vector3.png" alt="vector3">
+    <img class="absolute -bottom-24 left-[28.5%]" src="assets/images/highlight-vector 1.png" alt="highlight-vector">
+    <img class="absolute -bottom-[6.4rem] right-[28.5%]" src="assets/images/highlight_02.png" alt="highlight_02">
+    <!-- Bottom nav -->
+    <div class="relative -bottom-36 w-[39%] mx-auto bg-white text-black rounded-full p-1.5">
+      
+      <ul class="flex items-center text-black">
+        <li class="active tab-btn"><a href="#features">Features</a></li>
+        <li class="tab-btn"><a href="#">About</a></li>
+        <li class="tab-btn"><a href="#">Connect</a></li>
+        <li class="tab-btn"><a href="#">Download</a></li>
+      </ul>
+    </div>
+    <img class="absolute -bottom-[10.4rem] right-0" src="assets/images/Highlight_07.png" alt="Highlight_07">
+  </section>
+  <script src="main.js"></script>
 </body>
 </html>
