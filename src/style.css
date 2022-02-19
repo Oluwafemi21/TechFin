@@ -8,7 +8,7 @@
 }
 
 .tab-btn{
-    @apply py-2.5 px-8 hover:bg-black hover:rounded-full hover:text-white cursor-pointer transition ease-in-out transition-[backgroundColor] delay-150;
+    @apply py-2.5 px-8 w-full hover:bg-black hover:rounded-full hover:text-white cursor-pointer transition ease-in-out transition-[backgroundColor] delay-150;
 }
 
 .btn{
