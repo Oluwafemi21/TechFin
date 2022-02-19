@@ -14,3 +14,11 @@
 .btn{
     @apply px-6 py-3 rounded-full cursor-pointer bg-lightGrey text-white hover:bg-gray-100 hover:text-black;
 }
+
+.underlined_text{
+    @apply text-white after:w-3.5 after:h-[3px] after:bg-lightBlue;
+}
+
+.card{
+    @apply w-[382px] bg-darkGrey pt-12 px-7 pb-6
+}

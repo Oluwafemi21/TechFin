@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,71 +9,130 @@
   <title>TechFin</title>
 </head>
 <body class="bg-black h-screen text-white font-body">
-  <header class="container mx-auto w-[90%]">
-    <nav class="flex items-center justify-between py-5">
-
-      <div class="flex items-center space-x-2">
-        <img src="assets/logo.png" alt="logo">
-        <span class="text-white font-bold text-2xl ">TechFin</span>
-      </div>
-
-      <p class="text-sm">Sign up and get up to 20% Bonus on Referrals</p>
-
-      <div class="flex items-center space-x-10 text-sm">
-        <button class="cursor-pointer hover:text-dirtywhite">Login</button>
-        <button class="btn font-bold">GET THE APP</button>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero Page -->
-  <section class="relative max-h-full">
-    <div class="w-[82%] mx-auto flex items-center justify-between gap-18">
-      <!-- Grid 1 -->
-      <div class="w-1/2 pt-10">
-        <div class="flex items-center space-x-3 pb-5">
-          <button class="btn border border-dirtywhite">NEW UPDATE</button>
-          <p>Introducing wallets but for ACH</p>
+  <!-- Home Page -->
+  <section class="min-h-screen">
+    <header class="container mx-auto w-[90%]">
+      <nav class="flex items-center justify-between py-5">
+  
+        <div class="flex items-center space-x-2">
+          <img src="assets/logo.png" alt="logo">
+          <span class="text-white font-bold text-2xl ">TechFin</span>
         </div>
-        <div class="relative">
-          <h1 class="text-7xl">ACH E-wallet in your pockets <span class="text-5xl">&#129297;</span> </h1>
-          <img class="absolute right-16" src="assets/images/vector2.png" alt="vector2">
-          <p class="text-sm max-w-[491px] py-8">Just set it and forget it-no more worrying about getting payments late We process transactions in 3x108 m/s</p>
-          <div class="flex items-center space-x-11">
-            <button class="btn font-medium uppercase"><span class="pr-2">&#128522;</span>Get our app</button>
-            <button class="text-dirtywhite hover:text-white">See how it works</button>
+  
+        <p class="text-sm">Sign up and get up to 20% Bonus on Referrals</p>
+  
+        <div class="flex items-center space-x-10 text-sm">
+          <button class="cursor-pointer hover:text-dirtywhite">Login</button>
+          <button class="btn font-bold">GET THE APP</button>
+        </div>
+      </nav>
+    </header>
+  
+    <!-- Hero Page -->
+    <section class="relative h-full">
+      <div class="w-[82%] mx-auto flex items-center justify-between gap-18">
+        <!-- Grid 1 -->
+        <div class="w-1/2 pt-10">
+          <div class="flex items-center space-x-3 pb-5">
+            <button class="btn border border-dirtywhite">NEW UPDATE</button>
+            <p>Introducing wallets but for ACH</p>
+          </div>
+          <div class="relative">
+            <h1 class="text-7xl">ACH E-wallet in your pockets <span class="text-5xl">&#129297;</span> </h1>
+            <img class="absolute right-16" src="assets/images/vector2.png" alt="vector2">
+            <p class="text-sm max-w-[491px] py-8">Just set it and forget it-no more worrying about getting payments late We process transactions in 3x108 m/s</p>
+            <div class="flex items-center space-x-11">
+              <button class="btn font-medium uppercase"><span class="pr-2">&#128522;</span>Get our app</button>
+              <button class="text-dirtywhite hover:text-white">See how it works</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Grid 2 -->
+        <div class="w-1/2 pt-4">
+          <div class="relative flex items-center justify-center">
+            <img class="absolute left-24 top-5" src="assets/images/vector1.png" alt="vector1">
+            <img class="h-[300px]"src="assets/images/Ellipse 1.png" alt="blue-circle">
+            <img  class="absolute top-24 h-[300px]"src="assets/images/hero-img.png" alt="hero-img">
           </div>
         </div>
       </div>
-
-      <!-- Grid 2 -->
-      <div class="w-1/2 pt-4">
-        <div class="relative flex items-center justify-center">
-          <img class="absolute left-24 top-5" src="assets/images/vector1.png" alt="vector1">
-          <img class="h-[300px]"src="assets/images/Ellipse 1.png" alt="blue-circle">
-          <img  class="absolute top-24 h-[300px]"src="assets/images/hero-img.png" alt="hero-img">
-        </div>
+  
+      <img class="absolute -bottom-32 left-8 animate-bounce" src="assets/images/vector3.png" alt="vector3">
+      <img class="absolute -bottom-24 left-[28.5%]" src="assets/images/highlight-vector 1.png" alt="highlight-vector">
+      <img class="absolute -bottom-24 right-[28.5%]" src="assets/images/highlight_02.png" alt="highlight_02">
+      <!-- Bottom nav -->
+      <div class="relative -bottom-32 w-[39%] mx-auto bg-white text-black rounded-full p-1.5">
+        
+        <ul class="flex items-center text-black">
+          <li class="active tab-btn"><a href="#features">Features</a></li>
+          <li class="tab-btn"><a href="#about">About</a></li>
+          <li class="tab-btn"><a href="#">Connect</a></li>
+          <li class="tab-btn"><a href="#">Download</a></li>
+        </ul>
       </div>
-    </div>
-
-    <img class="absolute -bottom-32 left-8" src="assets/images/vector3.png" alt="vector3">
-    <img class="absolute -bottom-20 left-[28.5%]" src="assets/images/highlight-vector 1.png" alt="highlight-vector">
-    <img class="absolute -bottom-20 right-[28.5%]" src="assets/images/highlight_02.png" alt="highlight_02">
-    <!-- Bottom nav -->
-    <div class="relative -bottom-32 w-[39%] mx-auto bg-white text-black rounded-full p-1.5">
-      
-      <ul class="flex items-center text-black">
-        <li class="active tab-btn"><a href="#features">Features</a></li>
-        <li class="tab-btn"><a href="#">About</a></li>
-        <li class="tab-btn"><a href="#">Connect</a></li>
-        <li class="tab-btn"><a href="#">Download</a></li>
-      </ul>
-    </div>
-    <img class="absolute -bottom-36 right-0" src="assets/images/Highlight_07.png" alt="Highlight_07">
+      <img class="absolute -bottom-36 right-0" src="assets/images/Highlight_07.png" alt="Highlight_07">
+    </section>
+  
   </section>
 
   <!-- Payment Automation page -->
+  <section class="min-h-screen py-9" id="about">
+    <div class="w-[82%] mx-auto">
+      <h1 class="text-7xl text-center max-w-screen-sm mx-auto">Automate all your payments</h1>
+      <p class="pt-3 pb-12 max-w-[940px] text-sm font-medium mx-auto text-center text-dirtywhite"> A standard ACH debit through Dwolla will be made available in the Dwolla Network three to four business days after the transfer is initiated
+        but with TechFin, It arrives <span class="underlined_text">instantly.</span></p>
+
+      <div class="grid gap-x-5 gap-y-11 grid-cols-3 grid-rows-2">
+        <div class="card">
+          <img src="assets/convert-3d-cube.png" alt="3d convert-3d-cube">
+          <p class="text-white pt-5 pb-7">Multi Platform</p>
+          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
+            hide sections on specific devices.</p>
+        </div>
+
+
+        <div class="card">
+          <img src="assets/tag-right.png" alt="3d tag-right">
+          <p class="text-white pt-5 pb-7">Verified Payment</p>
+          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
+            hide sections on specific devices.</p>
+        </div>
+
+
+        <div class="card">
+          <img src="assets/people.png" alt="3d people">
+          <p class="text-white pt-5 pb-7">Secure Identification</p>
+          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
+            hide sections on specific devices.</p>
+        </div>
+
+
+        <div class="card">
+          <img src="assets/receipt-item.png" alt="3d receipt-item">
+          <p class="text-white pt-5 pb-7">Daily Reports</p>
+          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
+            hide sections on specific devices.</p>
+        </div>
   
+        <div class="card">
+          <img src="assets/shield-search.png" alt="3d shield-search">
+          <p class="text-white pt-5 pb-7">Secure Cloud Data</p>
+          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
+            hide sections on specific devices.</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/receipt-item.png" alt="3d receipt-item">
+          <p class="text-white pt-5 pb-7">Daily Reports</p>
+          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
+            hide sections on specific devices.</p>
+        </div>
+  
+      </div>
+    </div>
+   
+  </section>
 
   <script src="main.js"></script>
 </body>
