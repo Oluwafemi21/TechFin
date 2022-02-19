@@ -8,6 +8,7 @@ module.exports = {
         lightGrey:'#26262B',
         darkGrey:'#1E1F21',
         dirtywhite:'#6D6D6D',
+        customBlack:"#171717",
       },
       fontFamily:{
         'body':['Space Grotesk'],
