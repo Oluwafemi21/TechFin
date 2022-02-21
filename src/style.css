@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=UnifrakturMaguntia:regular");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,7 +27,7 @@
 }
 
 .card {
-  @apply lg:w-[382px] bg-darkGrey pt-12 px-7 pb-6;
+  @apply desktop:w-[382px] lg:text-left text-center lg:block flex items-center justify-center flex-col bg-darkGrey pt-12 px-7 pb-6  /*cursor-pointer hover:transition hover:-translate-y-5 hover:bg-opacity-50*/;
 }
 
 .features__tab {
@@ -43,7 +44,7 @@
 }
 
 .tab-changer{
-    @apply hidden;
+    @apply hidden ;
 }
 
 .tab-active{
@@ -55,11 +56,11 @@
 }
 
 .tab-para{
-  @apply text-dirtywhite font-medium sm:text-sm text-base pt-3 pb-5 lg:max-w-[340px];
+  @apply text-dirtywhite font-medium lg:text-left text-justify sm:text-sm text-base pt-3 pb-5 lg:max-w-[338px];
 }
 
 .about{
-  @apply lg:text-[40px] lg:leading-[3rem] font-bold text-xl md:text-4xl;
+  @apply desktop:text-[40px] desktop:leading-[3rem] font-bold text-xl md:text-4xl;
 }
 
 

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700");
 
+@import url("https://fonts.googleapis.com/css?family=UnifrakturMaguntia:regular");
+
 /*
 ! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com
 */
@@ -518,10 +520,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 29.5%;
 }
 
-.right-\[29\%\]{
-  right: 29%;
-}
-
 .bottom-0{
   bottom: 0px;
 }
@@ -587,8 +585,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 6rem;
 }
 
-.h-full{
-  height: 100%;
+.h-9{
+  height: 2.25rem;
 }
 
 .min-h-screen{
@@ -619,12 +617,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
-.w-full{
-  width: 100%;
+.w-9{
+  width: 2.25rem;
 }
 
-.max-w-\[491px\]{
-  max-width: 491px;
+.w-\[\%\]{
+  width: %;
+}
+
+.w-\[70\%\]{
+  width: 70%;
 }
 
 .max-w-screen-md{
@@ -766,8 +768,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.25rem;
 }
 
-.gap-14{
-  gap: 3.5rem;
+.gap-\[2px\]{
+  gap: 2px;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -780,6 +786,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-x-hidden{
@@ -812,6 +824,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-darkGrey{
   --tw-bg-opacity: 1;
   background-color: rgb(30 31 33 / var(--tw-bg-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .py-5{
@@ -916,8 +933,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 4rem;
 }
 
-.pb-14{
-  padding-bottom: 3.5rem;
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pt-9{
+  padding-top: 2.25rem;
 }
 
 .text-center{
@@ -926,6 +947,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-body{
   font-family: Space Grotesk;
+}
+
+.font-icon{
+  font-family: UnifrakturMaguntia;
 }
 
 .text-2xl{
@@ -1065,15 +1090,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(30 31 33 / var(--tw-bg-opacity));
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   padding-top: 3rem;
   padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 @media (min-width: 1024px){
+  .card{
+    display: block;
+  }
+
+  .card{
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px){
   .card{
     width: 382px;
   }
@@ -1161,6 +1201,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .tab-para{
   padding-top: 0.75rem;
   padding-bottom: 1.25rem;
+  text-align: justify;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
@@ -1177,7 +1218,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 1024px){
   .tab-para{
-    max-width: 340px;
+    max-width: 338px;
+  }
+
+  .tab-para{
+    text-align: left;
   }
 }
 
@@ -1194,7 +1239,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1440px){
   .about{
     font-size: 40px;
   }
@@ -1329,6 +1374,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:hidden{
     display: none;
   }
+
+  .md\:w-full{
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1336,12 +1385,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     right: 4rem;
   }
 
-  .lg\:left-10{
-    left: 2.5rem;
+  .lg\:left-12{
+    left: 3rem;
   }
 
-  .lg\:top-12{
-    top: 3rem;
+  .lg\:top-8{
+    top: 2rem;
+  }
+
+  .lg\:right-\[26\.5\%\]{
+    right: 26.5%;
   }
 
   .lg\:-right-64{
@@ -1368,12 +1421,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .lg\:h-full{
-    height: 100%;
+  .lg\:h-\[320px\]{
+    height: 320px;
   }
 
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:w-2\/5{
+    width: 40%;
   }
 
   .lg\:max-w-xs{
@@ -1396,14 +1453,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 857px;
   }
 
-  .lg\:max-w-6xl{
-    max-width: 72rem;
-  }
-
-  .lg\:max-w-\[491px\]{
-    max-width: 491px;
-  }
-
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1424,13 +1473,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 4rem;
   }
 
-  .lg\:gap-x-5{
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
+  .lg\:gap-x-3{
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
   }
 
-  .lg\:gap-y-11{
-    row-gap: 2.75rem;
+  .lg\:gap-y-8{
+    row-gap: 2rem;
   }
 
   .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]){
@@ -1439,10 +1488,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-x-11 > :not([hidden]) ~ :not([hidden]){
+  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
-    margin-right: calc(2.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.75rem * calc(1 - var(--tw-space-x-reverse)));
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:px-6{
@@ -1450,14 +1499,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 1.5rem;
   }
 
-  .lg\:py-5{
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .lg\:py-32{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+  .lg\:py-28{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .lg\:px-36{
@@ -1470,8 +1514,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 0px;
   }
 
-  .lg\:pt-28{
-    padding-top: 7rem;
+  .lg\:pt-10{
+    padding-top: 2.5rem;
+  }
+
+  .lg\:pt-8{
+    padding-top: 2rem;
   }
 
   .lg\:pt-3{
@@ -1486,6 +1534,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-left: 9rem;
   }
 
+  .lg\:pr-6{
+    padding-right: 1.5rem;
+  }
+
   .lg\:pt-16{
     padding-top: 4rem;
   }
@@ -1494,13 +1546,83 @@ Ensure the default browser behavior of the `hidden` attribute.
     text-align: left;
   }
 
-  .lg\:text-7xl{
-    font-size: 4.5rem;
+  .lg\:text-6xl{
+    font-size: 3.75rem;
     line-height: 1;
   }
 
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1440px){
+  .desktop\:left-10{
+    left: 2.5rem;
+  }
+
+  .desktop\:top-12{
+    top: 3rem;
+  }
+
+  .desktop\:right-\[29\%\]{
+    right: 29%;
+  }
+
+  .desktop\:h-full{
+    height: 100%;
+  }
+
+  .desktop\:max-w-\[491px\]{
+    max-width: 491px;
+  }
+
+  .desktop\:max-w-6xl{
+    max-width: 72rem;
+  }
+
+  .desktop\:gap-x-5{
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
+
+  .desktop\:gap-y-11{
+    row-gap: 2.75rem;
+  }
+
+  .desktop\:space-x-11 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .desktop\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .desktop\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .desktop\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .desktop\:pt-28{
+    padding-top: 7rem;
+  }
+
+  .desktop\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }

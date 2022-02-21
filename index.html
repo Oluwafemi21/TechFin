@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link href="public/style.css" rel="stylesheet">
-  <title>TechFin</title>
-</head>
-<body class="bg-customBlack h-screen text-white font-body">
-  <!-- Home Page -->
-  <section class="min-h-screen flex flex-col">
-    <header class="container mx-auto w-[90%]">
-      <nav class="flex items-center justify-between py-5">
-  
-        <div class="flex items-center space-x-2">
-          <img src="assets/logo.png" alt="logo">
-          <span class="text-white font-bold text-2xl ">TechFin</span>
-        </div>
-  
-        <p class="text-sm hidden lg:block">Sign up and get up to 20% Bonus on Referrals</p>
-  
-        <div class="hidden lg:flex items-center space-x-10 text-sm">
-          <a href="/" class="cursor-pointer hover:text-dirtywhite">Login</a>
-          <a href="/" class="btn font-bold px-6 py-3">GET THE APP</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- hamburger menu -->
-        <svg id="menu" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 lg:hidden cursor-pointer hover:text-dirtywhite" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
+    <link href="public/style.css" rel="stylesheet" />
+    <title>TechFin</title>
+  </head>
+  <body class="bg-customBlack h-screen text-white font-body">
+    <!-- Home Page -->
+    <section class="min-h-screen flex flex-col">
+      <header class="container mx-auto w-[90%]">
+        <nav class="flex items-center justify-between py-5">
+          <div class="flex items-center space-x-2">
+            <img src="assets/logo.png" alt="logo" />
+            <span class="text-white font-bold text-2xl">TechFin</span>
+          </div>
 
-        <!-- <div class="sidenav" id="nav-menu">
+          <p class="text-sm hidden lg:block">
+            Sign up and get up to 20% Bonus on Referrals
+          </p>
+
+          <div class="hidden lg:flex items-center space-x-10 text-sm">
+            <a href="/" class="cursor-pointer hover:text-dirtywhite">Login</a>
+            <a href="/" class="btn font-bold px-6 py-3">GET THE APP</a>
+          </div>
+
+          <!-- hamburger menu -->
+          <svg
+            id="menu"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 lg:hidden cursor-pointer hover:text-dirtywhite"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+
+          <!-- <div class="sidenav" id="nav-menu">
           <svg xmlns="http://www.w3.org/2000/svg" id="close" class="h-6 w-6 cursor-pointer lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -46,186 +59,324 @@
           </ul>
 
         </div> -->
-      </nav>
-    </header>
-  
-    <!-- Hero Page page 1-->
-    <section class="relative grow">
-      <div class="w-[82%] mx-auto lg:flex-row flex-col-reverse flex items-center justify-between lg:gap-16 gap-32">
-        <!-- Grid 1 -->
-        <div class="lg:w-1/2 pt-8 lg:pt-28">
-          <div class="flex lg:flex-row items-center lg:space-x-5 pb-5 text-sm">
-            <button class="btn lg:px-6 px-2 py-3 ring-2 ring-dirtywhite">NEW UPDATE</button>
-            <p class="hidden md:block">Introducing wallets but for ACH</p>
+        </nav>
+      </header>
+
+      <!-- Hero Page page 1-->
+      <section class="relative grow">
+        <div
+          class="w-[82%] mx-auto lg:flex-row flex-col-reverse flex items-center justify-between lg:gap-16 gap-32"
+        >
+          <!-- Grid 1 -->
+          <div class="lg:w-1/2 pt-8 lg:pt-10 desktop:pt-28 ">
+            <div
+              class="flex lg:flex-row items-center space-x-2 lg:space-x-5 pb-5 text-sm"
+            >
+              <button class="btn lg:px-6 px-2 py-3 ring-2 ring-dirtywhite">
+                NEW UPDATE
+              </button>
+              <p class="">Introducing wallets but for ACH</p>
+            </div>
+            <div class="relative">
+              <h1
+                class="desktop:text-7xl lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
+              >
+                ACH E-wallet in your pockets
+                <span class="text-5xl">&#129297;</span>
+              </h1>
+
+              <img
+                class="sm:absolute lg:right-16 sm:right-24 md:hidden lg:block"
+                src="assets/images/vector2.png"
+                alt="vector2"
+              />
+              <p
+                class="lg:text-sm text-lg desktop:max-w-[491px] py-8 text-center lg:text-left"
+              >
+                Just set it and forget it-no more worrying about getting
+                payments late We process transactions in 3x108 m/s
+              </p>
+
+              <div
+                class="flex items-center justify-center lg:justify-start gap-5 desktop:space-x-11 lg:space-x-8"
+              >
+                <a
+                  href="/"
+                  class="btn font-medium uppercase px-2 py-3 desktop:py-5 desktop:px-6"
+                  ><span class="pr-2">&#128522;</span>Get our app</a
+                >
+                <a href="/" class="text-dirtywhite hover:text-white"
+                  >See how it works</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="relative">
-            <h1 class="lg:text-7xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0">ACH E-wallet in your pockets <span class="text-5xl">&#129297;</span> 
-            </h1>
 
-            <img class="sm:absolute lg:right-16 sm:right-24 md:hidden lg:block" src="assets/images/vector2.png" alt="vector2">
-            <p class="lg:text-sm text-lg lg:max-w-[491px] py-8 sm:text-center lg:text-left">Just set it and forget it-no more worrying about getting payments late We process transactions in 3x108 m/s</p>
-
-            <div class="flex items-center justify-center lg:justify-start gap-5 lg:space-x-11">
-              <a href="/" class="btn font-medium uppercase px-2 py-3 lg:py-5 lg:px-6"><span class="pr-2">&#128522;</span>Get our app</a>
-              <a href="/" class="text-dirtywhite hover:text-white">See how it works</a>
+          <!-- Grid 2 -->
+          <div class="lg:w-1/2 pt-20 lg:pt-8">
+            <div class="relative flex items-center justify-center">
+              <img
+                class="absolute -left-12 top-0 lg:left-12 lg:top-8 desktop:left-10 desktop:top-12"
+                src="assets/images/vector1.png"
+                alt="vector1"
+              />
+              <img
+                class="h-[250px] lg:h-[320px] desktop:h-full"
+                src="assets/images/Ellipse 1.png"
+                alt="blue-circle"
+              />
+              <img
+                class="absolute top-24 h-[250px] lg:h-[320px] desktop:h-full"
+                src="assets/images/hero-img.png"
+                alt="hero-img"
+              />
             </div>
           </div>
         </div>
-  
-        <!-- Grid 2 -->
-        <div class="lg:w-1/2 pt-20">
-          <div class="relative flex items-center justify-center">
-            <img class="absolute -left-12 top-0 lg:left-10 lg:top-12" src="assets/images/vector1.png" alt="vector1">
-            <img class="h-[250px] lg:h-full" src="assets/images/Ellipse 1.png" alt="blue-circle">
-            <img  class="absolute top-24 h-[250px] lg:h-full"src="assets/images/hero-img.png" alt="hero-img">
-          </div>
-        </div>
-      </div>
-  
-          <img class="hidden lg:block absolute bottom-4 left-8 animate-bounce" src="assets/images/vector3.png" alt="vector3">
-          <img class="hidden lg:block absolute bottom-[4.5rem] left-[29.5%]" src="assets/images/highlight-vector 1.png" alt="highlight-vector">
-          <img class="hidden lg:block absolute bottom-[4.5rem] right-[29%]" src="assets/images/highlight_02.png" alt="highlight_02">
-          <!-- Bottom nav -->
-          <div class="hidden lg:block absolute bottom-0 left-[32%] bg-white text-black rounded-full py-3 px-2.5 mb-9">
-            
-            <ul class="flex items-center text-black">
-              <li class="py-1"><a href="#features" class="active nav-btn">Features</a></li>
-              <li class="py-1"><a href="#about" class="nav-btn">About</a></li>
-              <li class="py-1"><a href="#connect" class="nav-btn">Connect</a></li>
-              <li class="py-1"><a href="/" class="nav-btn">Download</a></li>
-            </ul>
-          </div>
 
-          <img class="hidden lg:block absolute bottom-0 right-0" src="assets/images/Highlight_07.png" alt="Highlight_07">
-      
-     
+        <img
+          class="hidden lg:block absolute bottom-4 left-8 animate-bounce"
+          src="assets/images/vector3.png"
+          alt="vector3"
+        />
+        <img
+          class="hidden lg:block absolute bottom-[4.5rem] left-[29.5%]"
+          src="assets/images/highlight-vector 1.png"
+          alt="highlight-vector"
+        />
+        <img
+          class="hidden lg:block absolute bottom-[4.5rem] desktop:right-[29%] lg:right-[26.5%]"
+          src="assets/images/highlight_02.png"
+          alt="highlight_02"
+        />
+
+        <!-- Bottom nav -->
+        <div
+          class="hidden lg:block absolute bottom-0 left-[32%] bg-white text-black rounded-full py-3 px-2.5 mb-9"
+        >
+          <ul class="flex items-center gap-[2px] text-black">
+            <li class="py-1">
+              <a href="#features" class="active nav-btn">Features</a>
+            </li>
+            <li class="py-1"><a href="#about" class="nav-btn">About</a></li>
+            <li class="py-1"><a href="#connect" class="nav-btn">Connect</a></li>
+            <li class="py-1"><a href="#download" class="nav-btn">Download</a></li>
+          </ul>
+        </div>
+
+        <img
+          class="hidden lg:block absolute bottom-0 right-0"
+          src="assets/images/Highlight_07.png"
+          alt="Highlight_07"
+        />
+      </section>
     </section>
 
-  </section>
+    <!-- Payment Automation page 2 -->
+    <section class="min-h-screen py-9" id="features">
+      <div class="w-[82%] mx-auto">
+        <h1 class="text-4xl lg:text-7xl text-center max-w-screen-md mx-auto">
+          Automate all your payments
+        </h1>
+        <p
+          class="pt-5 lg:pt-3 pb-12 max-w-[940px] lg:text-sm text-lg font-medium mx-auto text-center text-dirtywhite"
+        >
+          A standard ACH debit through Dwolla will be made available in the
+          Dwolla Network three to four business days after the transfer is
+          initiated but with TechFin, It arrives
+          <span class="underlined_text">instantly.</span>
+        </p>
 
-  <!-- Payment Automation page 2 -->
-  <section class="min-h-screen py-9" id="features">
-    <div class="w-[82%] mx-auto">
-      <h1 class="text-4xl lg:text-7xl text-center max-w-screen-md mx-auto">Automate all your payments</h1>
-      <p class="pt-5 lg:pt-3 pb-12 max-w-[940px] lg:text-sm text-lg font-medium mx-auto text-center text-dirtywhite"> A standard ACH debit through Dwolla will be made available in the Dwolla Network three to four business days after the transfer is initiated
-        but with TechFin, It arrives <span class="underlined_text">instantly.</span></p>
+        <div
+          class="grid gap-5 lg:gap-x-3 lg:gap-y-8 desktop:gap-x-5 desktop:gap-y-11 lg:grid-cols-3 lg:grid-rows-2"
+        >
+          <div class="card">
+            <img src="assets/convert-3d-cube.png" alt="3d convert-3d-cube" />
+            <p class="text-white pt-5 pb-7">Multi Platform</p>
+            <p class="text-dirtywhite lg:max-w-xs text-sm font-medium">
+              Adjust responsive spacing, change font size, hide sections on
+              specific devices.
+            </p>
+          </div>
 
-      <div class="grid gap-5 lg:gap-x-5 lg:gap-y-11 lg:grid-cols-3 lg:grid-rows-2">
-        <div class="card">
-          <img src="assets/convert-3d-cube.png" alt="3d convert-3d-cube">
-          <p class="text-white pt-5 pb-7">Multi Platform</p>
-          <p class="text-dirtywhite lg:max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
-            hide sections on specific devices.
+          <div class="card">
+            <img src="assets/tag-right.png" alt="3d tag-right" />
+            <p class="text-white pt-5 pb-7">Verified Payment</p>
+            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+              Adjust responsive spacing, change font size, hide sections on
+              specific devices.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="assets/people.png" alt="3d people" />
+            <p class="text-white pt-5 pb-7">Secure Identification</p>
+            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+              Adjust responsive spacing, change font size, hide sections on
+              specific devices.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="assets/receipt-item.png" alt="3d receipt-item" />
+            <p class="text-white pt-5 pb-7">Daily Reports</p>
+            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+              Adjust responsive spacing, change font size, hide sections on
+              specific devices.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="assets/shield-search.png" alt="3d shield-search" />
+            <p class="text-white pt-5 pb-7">Secure Cloud Data</p>
+            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+              Adjust responsive spacing, change font size, hide sections on
+              specific devices.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="assets/receipt-item.png" alt="3d receipt-item" />
+            <p class="text-white pt-5 pb-7">Daily Reports</p>
+            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+              Adjust responsive spacing, change font size, hide sections on
+              specific devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About page 3-->
+    <section
+      id="about"
+      class="lg:py-28 desktop:py-32 py-14 sm:min-h-screen overflow-x-hidden"
+    >
+      <div
+        class="relative text-white flex flex-col lg:max-w-[70%] max-w-[80%] mx-auto"
+      >
+        <p class="about lg:max-w-[920px] pb-16">
+          &#127974; Help businesses save time and cut costs. And, for nonprofits
+          and religious organizations, Direct Payment helps manage and increase
+          automatic donations.
+        </p>
+        <p class="about pb-20 lg:max-w-[820px]">
+          &#128182; Stock exchange. Lets investors recoup the initial investment
+          plus capital gains from subsequent rises in stock price.
+        </p>
+        <p class="about lg:max-w-[857px]">
+          &#128272; Next‑generation security. knows a face when it sees one, and
+          intelligently relights it to capture more natural-looking contours.
+        </p>
+
+        <div
+          class="hidden md:block absolute -bottom-10 md:-right-32 lg:-right-64 h-24 w-24 rounded-full bg-darkBlue"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Tab page 4 -->
+    <section class="min-h-screen lg:px-36 pt-24 pb-20" id="connect">
+      <div class="bg-darkGrey desktop:max-w-6xl lg:px-0 md:w-full px-8 w-[80%] mx-auto">
+        <div class="features__tab">
+          <p class="active-tab tab">Send Funds</p>
+          <p class="tab">Receive Funds</p>
+        </div>
+
+        <!-- Tab 1 -->
+        <div
+          class="tab-changer tab-active gap-10 pt-20 lg:pb-28 animate-slidein items-center"
+        >
+          <!-- Tab Text Area -->
+          <div class="lg:pl-36 text-center lg:text-left">
+            <p class="font-bold">— 890m Transactions Completed</p>
+            <h2 class="tab-header">Connect your Debit Card</h2>
+            <p class="tab-para">
+              Our ACH Network has been continually advancing since its first
+              release, adding new capabilities and transaction types, improving
+              processing speeds.
+            </p>
+            <button class="btn bigbtn">
+              <span class="pr-2">&#128640;</span>Get started
+            </button>
+          </div>
+
+          <!-- Image -->
+          <div class="mt-8 pt-6">
+            <img
+              class="pt-2 lg:pr-6"
+              src="assets/images/image 4.png"
+              alt="send funds"
+            />
+          </div>
+        </div>
+
+        <!-- Tab 2 -->
+        <div class="tab-changer justify-between gap-30 pt-16 pb-8 animate-slideout">
+          <!-- Tab Text Area -->
+          <div class="lg:pl-36 text-center lg:text-left lg:pt-16 lg:w-1/2">
+            <p class="font-bold">— 890m Transactions Completed</p>
+            <h2 class="tab-header">Connect your Debit Card</h2>
+            <p class="tab-para">
+              Preferred stock may be hybrid by having the qualities of bonds of
+              fixed returns and common stock voting rightson.
+            </p>
+            <button class="btn bigbtn">
+              <span class="pr-2">&#128522;</span>Get our app
+            </button>
+          </div>
+
+          <!-- Image -->
+          <div class="lg:w-2/5 flex items-center justify-center lg:block sm:mt-0 mt-8">
+            <img class="" src="assets/images/image 5.png" alt="Receive funds" />
+          </div>
+
+        </div>
+
+      </div>
+      
+    </section>
+
+    <!-- Download page 5 -->
+    <section class="min-h-screen" id="download">
+      <div class="flex items-center justify-center space-x-5 pt-9">
+        <div class="bg-black h-9 w-9 rounded-full flex items-center justify-center">
+          <span class="font-icon text-lg">i</span>
+        </div>
+        <p class="tab-para">We are currently in BETA, you may encounter some issues if you go ahead and launch now.</p>
+      </div>
+
+
+
+      <div class="flex items-center justify-between w-[70%] mx-auto lg:gap-16 gap-32">
+        <div class="lg:w-1/2 pt-8 lg:pt-10 desktop:pt-28 ">
+          <h1
+            class="desktop:text-7xl lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
+          >
+            ACH E-wallet in your pockets
+            <span class="text-5xl">&#129297;</span>
+          </h1>
+          <p
+            class="lg:text-sm text-lg desktop:max-w-[491px] py-8 text-center lg:text-left"
+          >
+          When you wake up on a Friday and see that your salary
+          was automatically deposited to your bank account,
+          that’s ACH.
           </p>
+          
+          <a
+            href="/"
+            class="btn font-medium uppercase px-2 py-3 desktop:py-5 desktop:px-6"
+            ><span class="pr-2">&#128522;</span>Get our app</a
+          >
         </div>
 
-
-        <div class="card">
-          <img src="assets/tag-right.png" alt="3d tag-right">
-          <p class="text-white pt-5 pb-7">Verified Payment</p>
-          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
-            hide sections on specific devices.</p>
+        <div class="lg:w-1/2 pt-20 lg:pt-8">
+          <img src="assets/images/image 3.png" alt="image3">
         </div>
-
-
-        <div class="card">
-          <img src="assets/people.png" alt="3d people">
-          <p class="text-white pt-5 pb-7">Secure Identification</p>
-          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
-            hide sections on specific devices.</p>
-        </div>
-
-
-        <div class="card">
-          <img src="assets/receipt-item.png" alt="3d receipt-item">
-          <p class="text-white pt-5 pb-7">Daily Reports</p>
-          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
-            hide sections on specific devices.</p>
-        </div>
-  
-        <div class="card">
-          <img src="assets/shield-search.png" alt="3d shield-search">
-          <p class="text-white pt-5 pb-7">Secure Cloud Data</p>
-          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
-            hide sections on specific devices.</p>
-        </div>
-
-        <div class="card">
-          <img src="assets/receipt-item.png" alt="3d receipt-item">
-          <p class="text-white pt-5 pb-7">Daily Reports</p>
-          <p class="text-dirtywhite max-w-xs text-sm font-medium">Adjust responsive spacing, change font size,
-            hide sections on specific devices.</p>
-        </div>
-  
-      </div>
-    </div>
-   
-  </section>
-
-  <!-- About page 3-->
-  <section id="about" class="lg:py-32 py-14 sm:min-h-screen overflow-x-hidden">
-    <div class="relative text-white flex flex-col lg:max-w-[70%] max-w-[80%] mx-auto">
-      <p class="about lg:max-w-[920px] pb-16">&#127974; Help businesses save time and cut costs. And, for nonprofits and religious organizations, Direct Payment helps manage and increase automatic donations.
-      </p>
-      <p class="about pb-20 lg:max-w-[820px]">&#128182; Stock exchange. Lets investors recoup the initial investment plus capital gains from subsequent rises in stock price.
-      </p>
-      <p class="about lg:max-w-[857px]">&#128272; Next‑generation security. knows a face when it sees one, and intelligently relights it to capture more natural-looking contours.
-      </p>
-
-      <div class="hidden md:block absolute -bottom-10 md:-right-32 lg:-right-64 h-24 w-24 rounded-full bg-darkBlue">
-      </div>
-    </div>
-  </section>
-
-  <!-- Tab page 4 -->
-  <section class="min-h-screen lg:px-36 pt-24 pb-20" id="connect">
-    <div class="bg-darkGrey lg:max-w-6xl lg:px-0 px-8 w-[80%] mx-auto">
-     
-      <div class="features__tab">
-        <p class="active-tab tab">Send Funds</p>
-        <p class="tab">Receive Funds</p>
       </div>
 
-      <!-- Tab 1 -->
-      <div class="tab-changer tab-active gap-14 pt-20 lg:pb-28 animate-slidein items-center">
-        <!-- Tab Text Area -->
-        <div class="lg:pl-36 text-center lg:text-left">
-          <p class="font-bold">— 890m Transactions Completed</p>
-          <h2 class="tab-header">Connect your Debit Card</h2>
-          <p class="tab-para">Our ACH Network has been continually advancing since its first release, 
-            adding new capabilities and transaction types, improving processing speeds.
-          </p>
-          <button class="btn bigbtn"><span class="pr-2">&#128640;</span>Get started</button>
-        </div>
-
-        <!-- Image -->
-        <div class="mt-8 pt-6">
-          <img class="pt-2 w-full h-full" src="assets/images/image 4.png" alt="send funds">
-        </div>
-
-      </div>
-
-      <!-- Tab 2 -->
-      <div class="tab-changer gap-32 pt-16 pb-14 animate-slideout">
-        <!-- Tab Text Area -->
-        <div class="lg:pl-36 text-center lg:text-left lg:pt-16">
-          <p class="font-bold">— 890m Transactions Completed</p>
-          <h2 class="tab-header">Connect your Debit Card</h2>
-          <p class="tab-para">Preferred stock may be hybrid by having the qualities of bonds of fixed returns and common stock voting rightson.
-          </p>
-          <button class="btn bigbtn"><span class="pr-2">&#128522;</span>Get our app</button>
-        </div>
-
-        <!-- Image -->
-        <div class="flex items-center justify-center lg:block sm:mt-0 mt-8">
-          <img src="assets/images/image 5.png" alt="Receive funds">
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <script src="main.js"></script>
-</body>
+    </section>
+    <script src="main.js"></script>
+  </body>
 </html>

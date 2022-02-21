@@ -19,6 +19,7 @@ module.exports = {
       },
       fontFamily: {
         body: ["Space Grotesk"],
+        icon:["UnifrakturMaguntia"],
       },
       keyframes: {
         slidein: {
