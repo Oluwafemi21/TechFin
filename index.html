@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="public/style.css" rel="stylesheet" />
+    <!-- Link for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link for css stylesheet -->
+    <link href="public/style.css" rel="stylesheet"/>
     <title>TechFin</title>
   </head>
   <body class="bg-customBlack h-screen text-white font-body">
@@ -65,12 +69,12 @@
       <!-- Hero Page page 1-->
       <section class="relative grow">
         <div
-          class="w-[82%] mx-auto lg:flex-row flex-col-reverse flex items-center justify-between lg:gap-16 gap-32"
+          class="hero-container"
         >
           <!-- Grid 1 -->
           <div class="lg:w-1/2 pt-8 lg:pt-10 desktop:pt-28 ">
             <div
-              class="flex lg:flex-row items-center space-x-2 lg:space-x-5 pb-5 text-sm"
+              class="flex flex-col items-start gap-4 lg:flex-row lg:items-center space-x-2 lg:space-x-5 pb-5 text-sm"
             >
               <button class="btn lg:px-6 px-2 py-3 ring-2 ring-dirtywhite">
                 NEW UPDATE
@@ -79,7 +83,7 @@
             </div>
             <div class="relative">
               <h1
-                class="desktop:text-7xl lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
+                class="desktop:text-7xl font-bold lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
               >
                 ACH E-wallet in your pockets
                 <span class="text-5xl">&#129297;</span>
@@ -113,7 +117,7 @@
           </div>
 
           <!-- Grid 2 -->
-          <div class="lg:w-1/2 pt-20 lg:pt-8">
+          <div class="lg:w-1/2 pt-10 desktop:pt-20 lg:pt-8">
             <div class="relative flex items-center justify-center">
               <img
                 class="absolute -left-12 top-0 lg:left-12 lg:top-8 desktop:left-10 desktop:top-12"
@@ -175,11 +179,11 @@
     <!-- Payment Automation page 2 -->
     <section class="min-h-screen py-9" id="features">
       <div class="w-[82%] mx-auto">
-        <h1 class="text-4xl lg:text-7xl text-center max-w-screen-md mx-auto">
+        <h1 class="text-4xl lg:text-7xl font-bold text-center max-w-screen-md mx-auto">
           Automate all your payments
         </h1>
         <p
-          class="pt-5 lg:pt-3 pb-12 max-w-[940px] lg:text-sm text-lg font-medium mx-auto text-center text-dirtywhite"
+          class="payment-para"
         >
           A standard ACH debit through Dwolla will be made available in the
           Dwolla Network three to four business days after the transfer is
@@ -188,12 +192,12 @@
         </p>
 
         <div
-          class="grid gap-5 lg:gap-x-3 lg:gap-y-8 desktop:gap-x-5 desktop:gap-y-11 lg:grid-cols-3 lg:grid-rows-2"
+          class="grid gap-5 lg:gap-x-3 lg:gap-y-8 desktop:gap-x-5 desktop:gap-y-11 lg:grid-cols-3 lg:grid-rows-2 animate-slidein"
         >
           <div class="card">
             <img src="assets/convert-3d-cube.png" alt="3d convert-3d-cube" />
-            <p class="text-white pt-5 pb-7">Multi Platform</p>
-            <p class="text-dirtywhite lg:max-w-xs text-sm font-medium">
+            <h5 class="text-white pt-5 pb-7">Multi Platform</h5>
+            <p class="card-text">
               Adjust responsive spacing, change font size, hide sections on
               specific devices.
             </p>
@@ -201,8 +205,8 @@
 
           <div class="card">
             <img src="assets/tag-right.png" alt="3d tag-right" />
-            <p class="text-white pt-5 pb-7">Verified Payment</p>
-            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+            <h5 class="text-white pt-5 pb-7">Verified Payment</h5>
+            <p class="card-text">
               Adjust responsive spacing, change font size, hide sections on
               specific devices.
             </p>
@@ -210,8 +214,8 @@
 
           <div class="card">
             <img src="assets/people.png" alt="3d people" />
-            <p class="text-white pt-5 pb-7">Secure Identification</p>
-            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+            <h5 class="text-white pt-5 pb-7">Secure Identification</h5>
+            <p class="card-text">
               Adjust responsive spacing, change font size, hide sections on
               specific devices.
             </p>
@@ -219,8 +223,8 @@
 
           <div class="card">
             <img src="assets/receipt-item.png" alt="3d receipt-item" />
-            <p class="text-white pt-5 pb-7">Daily Reports</p>
-            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+            <h5 class="text-white pt-5 pb-7">Daily Reports</h5>
+            <p class="card-text">
               Adjust responsive spacing, change font size, hide sections on
               specific devices.
             </p>
@@ -228,8 +232,8 @@
 
           <div class="card">
             <img src="assets/shield-search.png" alt="3d shield-search" />
-            <p class="text-white pt-5 pb-7">Secure Cloud Data</p>
-            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+            <h5 class="text-white pt-5 pb-7">Secure Cloud Data</h5>
+            <p class="card-text">
               Adjust responsive spacing, change font size, hide sections on
               specific devices.
             </p>
@@ -237,8 +241,8 @@
 
           <div class="card">
             <img src="assets/receipt-item.png" alt="3d receipt-item" />
-            <p class="text-white pt-5 pb-7">Daily Reports</p>
-            <p class="text-dirtywhite max-w-xs text-sm font-medium">
+            <h5 class="text-white pt-5 pb-7">Daily Reports</h5>
+            <p class="card-text">
               Adjust responsive spacing, change font size, hide sections on
               specific devices.
             </p>
@@ -348,16 +352,16 @@
 
 
 
-      <div class="flex items-center justify-between w-[70%] mx-auto lg:gap-16 gap-32">
-        <div class="lg:w-1/2 pt-8 lg:pt-10 desktop:pt-28 ">
+      <div class="flex items-center justify-center w-[75%] mx-auto gap-20">
+        <div class="lg:w-3/5 pt-8 lg:pt-10 desktop:pt-28 ">
           <h1
-            class="desktop:text-7xl lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
+            class="desktop:text-7xl font-bold lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
           >
             ACH E-wallet in your pockets
             <span class="text-5xl">&#129297;</span>
           </h1>
           <p
-            class="lg:text-sm text-lg desktop:max-w-[491px] py-8 text-center lg:text-left"
+            class="lg:text-sm text-lg desktop:max-w-[491px] py-8 text-center lg:text-left mb-2"
           >
           When you wake up on a Friday and see that your salary
           was automatically deposited to your bank account,
@@ -366,16 +370,99 @@
           
           <a
             href="/"
-            class="btn font-medium uppercase px-2 py-3 desktop:py-5 desktop:px-6"
-            ><span class="pr-2">&#128522;</span>Get our app</a
+            class="btn font-medium uppercase px-2 py-3 lg:px-5 desktop:py-5 desktop:px-6"
+            ><span class="pr-2">&#128640;</span>Get our app</a
           >
         </div>
 
-        <div class="lg:w-1/2 pt-20 lg:pt-8">
+        <div class="lg:w-2/5 pt-20 lg:pt-8">
           <img src="assets/images/image 3.png" alt="image3">
         </div>
       </div>
 
+    </section>
+
+    <!-- Footer -->
+    <section class="min-h-screen bg-darkGrey pt-16 " id="footer">
+      <p class="text-center text-dirtywhite text-sm font-medium">Inspired by Global Brands</p>
+
+      <div class="w-4/5 mx-auto">
+
+        <!-- Brands -->
+        <div class="py-10 flex items-center justify-between">
+          <img src="assets/peer.png" alt="peer">
+          <img src="assets/flutterwave.png" alt="flutterwave">
+          <img src="assets/talentql.png" alt="talentql">
+          <img src="assets/paga.png" alt="paga">
+          <img src="assets/alt-school.png" alt="alt-school">
+        </div>
+
+        <div class="mx-10 border-t border-b border-dirtywhite grid grid-cols-5 gap-14 py-14">
+            <div>
+              <div class="flex items-center space-x-2 pb-4">
+                <img src="assets/logo.png" alt="logo" />
+                <span class="text-white font-bold text-2xl">TechFin</span>
+              </div>
+
+              <p class="text-sm max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere viverra nec, sit est, tellus habitant. </p>
+            </div>
+            
+            <div>
+              <h3 class="footer-heading">Company</h3>
+              <ul class="pt-4 flex flex-col gap-5">
+                <li><a href="/" class="footer-link">about</a></li>
+                <li><a href="/" class="footer-link">FAQ</a></li>
+                <li><a href="/" class="footer-link">contact us</a></li>
+                <li><a href="/" class="footer-link">careers</a></li>
+                <li><a href="/" class="footer-link">privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer-heading">Products</h3>
+              <ul class="pt-4 flex flex-col gap-6">
+                <li><a href="/" class="footer-link">features</a></li>
+                <li><a href="/" class="footer-link">connect</a></li>
+                <li><a href="/" class="footer-link">pricing</a></li>
+                <li><a href="/" class="footer-link">download</a></li>
+              </ul>
+            </div>
+          
+
+          
+            <div class="grid-item">
+              <div class="flex flex-col">
+                <h3 class="footer-heading uppercase">need help</h3>
+                <span class="font-medium ">+234 81 333 0965</span>
+              </div>
+              <div class="flex flex-col">
+                <h3 class="footer-heading text-xs uppercase">need support</h3>
+                <span class="font-medium">hi@mosessmax.com</span>
+              </div>
+            </div>
+
+            <div class="grid-item">
+              <div class="flex flex-col">
+                <h3 class="footer-heading uppercase">follow us</h3>
+                <div class="flex items-center gap-6 text-white">
+                  <i class='bx bxl-twitter bx-sm icon'></i>
+                  <i class='bx bxl-instagram bx-sm  icon' ></i>
+                  <i class='bx bxl-linkedin bx-sm icon'></i>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" class="outline-none px-3 py-3 text-xs bg-customBlack text-dirtywhite">
+                <input type="submit" value="GO" class="bg-lightGrey cursor-pointer px-3 py-2 ">
+              </div>
+
+            </div>
+
+          
+
+        </div>
+
+      </div>
     </section>
     <script src="main.js"></script>
   </body>

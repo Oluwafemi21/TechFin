@@ -7,6 +7,8 @@ module.exports = {
         // => @media (min-width: 1440px) { ... },
         'sm': '600px',
         // => @media (min-width: 600px) { ... }
+        'xs':'320px',
+        // => @media (min-width:320px) { ... }
       },
       colors: {
         lightBlue: "#99C2FF",

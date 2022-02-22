@@ -22,12 +22,24 @@
   @apply font-medium uppercase py-5 px-6 hidden sm:block;
 }
 
+.hero-container{
+  @apply w-[82%] mx-auto lg:flex-row flex-col-reverse flex items-center justify-between lg:gap-16 gap-32;
+}
+
 .underlined_text {
   @apply text-white border-b-4 border-lightBlue;
 }
 
+.payment-para{
+  @apply pt-5 lg:pt-3 pb-12 max-w-[940px] lg:text-sm text-lg font-medium mx-auto text-center text-dirtywhite;
+}
+
 .card {
-  @apply desktop:w-[382px] lg:text-left text-center lg:block flex items-center justify-center flex-col bg-darkGrey pt-12 px-7 pb-6  /*cursor-pointer hover:transition hover:-translate-y-5 hover:bg-opacity-50*/;
+  @apply desktop:w-[382px] lg:text-left text-center lg:block flex items-center justify-center flex-col bg-darkGrey pt-12 px-7 pb-6 ;
+}
+
+.card-text{
+  @apply text-dirtywhite max-w-xs text-sm font-medium;
 }
 
 .features__tab {
@@ -63,6 +75,21 @@
   @apply desktop:text-[40px] desktop:leading-[3rem] font-bold text-xl md:text-4xl;
 }
 
+.grid-item{
+  @apply flex flex-col;
+}
+
+.footer-heading{
+  @apply text-dirtywhite text-sm font-bold;
+}
+
+.footer-link{
+  @apply capitalize w-full bg-red-300 block;
+}
+
+.icon{
+  @apply hover:text-dirtywhite cursor-pointer;
+}
 
 .sidenav{
   @apply lg:relative lg:left-0 lg:min-h-0 lg:animate-none lg:bg-transparent bg-white lg:pl-0 lg:pt-0 fixed -left-5 top-0 w-[75%] z-50  min-h-screen pl-14 pt-8 animate-slidein lg:block lg:shadow-none shadow-3xl;
