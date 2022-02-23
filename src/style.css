@@ -31,7 +31,7 @@
 }
 
 .payment-para{
-  @apply pt-5 lg:pt-3 pb-12 max-w-[940px] lg:text-sm text-lg font-medium mx-auto text-center text-dirtywhite;
+  @apply pt-5 lg:pt-3 pb-12 max-w-[940px] lg:text-sm text-base font-medium mx-auto text-center text-dirtywhite;
 }
 
 .card {
