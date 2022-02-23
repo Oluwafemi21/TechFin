@@ -48,23 +48,37 @@
             />
           </svg>
 
-          <!-- <div class="sidenav" id="nav-menu">
-          <svg xmlns="http://www.w3.org/2000/svg" id="close" class="h-6 w-6 cursor-pointer lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-          
-
-          <ul class="lg:ml-10 lg:mt-0 mt-10 items-center gap-3 lg:flex text-sm ">
-            <li class="nav-link"><a href="/">Collections</a></li>
-            <li class="nav-link"><a href="/">Men</a></li>
-            <li class="nav-link"><a href="/">Women</a></li>
-            <li class="nav-link"><a href="/">About</a></li>
-            <li class="nav-link"><a href="/">Contact</a></li>
-          </ul>
-
-        </div> -->
         </nav>
       </header>
+
+
+      <!-- Hamburger Menu -->
+      <div class="bg-darkGrey animate-slideout text-white transition-all ease-in-out delay-500 fixed top-0 left-0 w-full h-full z-20 opacity-95 hidden lg:hidden" id="nav-menu">
+        <div class="container w-[90%] mx-auto flex flex-col gap-14">
+          <div class="flex items-center justify-between py-5">
+
+            <div class="flex items-center space-x-2">
+              <img src="assets/logo.png" alt="logo" />
+              <span class="text-white font-bold text-2xl">TechFin</span>
+            </div>
+  
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer hover:text-black" id="close" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+  
+          </div>
+          <ul class="flex flex-col items-center justify-center gap-8">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+          <div class="flex items-center justify-center space-x-5">
+            <a href="/" class="cursor-pointer py-3 px-2 hover:text-dirtywhite">Login</a>
+            <a href="/" class="font-bold py-3 px-2 ">GET THE APP</a>
+          </div>
+        </div>
+      </div>
 
       <!-- Hero Page page 1-->
       <section class="relative grow">
@@ -149,14 +163,14 @@
           alt="highlight-vector"
         />
         <img
-          class="hidden lg:block absolute bottom-[4.5rem] desktop:right-[29%] lg:right-[26.5%]"
+          class="hidden lg:block absolute bottom-[4.5rem] desktop:right-[29%] lg:right-[27%]"
           src="assets/images/highlight_02.png"
           alt="highlight_02"
         />
 
         <!-- Bottom nav -->
         <div
-          class="hidden lg:block absolute bottom-0 left-[32%] bg-white text-black rounded-full py-3 px-2.5 mb-9"
+          class="hidden lg:block absolute bottom-0 left-[32%] max-w-screen-md bg-white text-black rounded-full py-3 px-2.5 mb-9"
         >
           <ul class="flex items-center gap-[2px] text-black">
             <li class="py-1">
@@ -174,6 +188,7 @@
           alt="Highlight_07"
         />
       </section>
+
     </section>
 
     <!-- Payment Automation page 2 -->
@@ -274,14 +289,14 @@
         </p>
 
         <div
-          class="hidden md:block absolute -bottom-10 md:-right-32 lg:-right-64 h-24 w-24 rounded-full bg-darkBlue"
+          class="hidden md:block absolute -bottom-10 md:-right-32 lg:-right-48 h-24 w-24 rounded-full bg-darkBlue"
         ></div>
       </div>
     </section>
 
     <!-- Tab page 4 -->
-    <section class="min-h-screen lg:px-36 pt-24 pb-20" id="connect">
-      <div class="bg-darkGrey desktop:max-w-6xl lg:px-0 md:w-full px-8 w-[80%] mx-auto">
+    <section class="min-h-screen lg:px-36 lg:pt-24 pt-8 pb-20" id="connect">
+      <div class="bg-darkGrey desktop:max-w-6xl md:w-full px-8 w-full">
         <div class="features__tab">
           <p class="active-tab tab">Send Funds</p>
           <p class="tab">Receive Funds</p>
@@ -292,7 +307,7 @@
           class="tab-changer tab-active gap-10 pt-20 lg:pb-28 animate-slidein items-center"
         >
           <!-- Tab Text Area -->
-          <div class="lg:pl-36 text-center lg:text-left">
+          <div class="desktop:pl-36 text-center lg:text-left">
             <p class="font-bold">— 890m Transactions Completed</p>
             <h2 class="tab-header">Connect your Debit Card</h2>
             <p class="tab-para">
@@ -316,9 +331,9 @@
         </div>
 
         <!-- Tab 2 -->
-        <div class="tab-changer justify-between gap-30 pt-16 pb-8 animate-slideout">
+        <div class="tab-changer justify-between gap-30 lg:items-center desktop:items-start pt-16 pb-8 animate-slideout">
           <!-- Tab Text Area -->
-          <div class="lg:pl-36 text-center lg:text-left lg:pt-16 lg:w-1/2">
+          <div class="desktop:pl-36 text-center lg:text-left desktop:pt-16 lg:w-1/2">
             <p class="font-bold">— 890m Transactions Completed</p>
             <h2 class="tab-header">Connect your Debit Card</h2>
             <p class="tab-para">
@@ -343,43 +358,40 @@
 
     <!-- Download page 5 -->
     <section class="min-h-screen" id="download">
-      <div class="flex items-center justify-center space-x-5 pt-9">
-        <div class="bg-black h-9 w-9 rounded-full flex items-center justify-center">
-          <span class="font-icon text-lg">i</span>
+      <div class="w-4/5 mx-auto pb-10 lg:pb-0 flex flex-col lg:h-screen">
+        <div class="flex items-center justify-center flex-col lg:flex-row space-x-5 pt-9">
+          <div class="bg-black h-9 w-9 rounded-full flex items-center justify-center">
+            <span class="font-icon text-lg">i</span>
+          </div>
+          <p class="tab-para">We are currently in BETA, you may encounter some issues if you go ahead and launch now.</p>
         </div>
-        <p class="tab-para">We are currently in BETA, you may encounter some issues if you go ahead and launch now.</p>
-      </div>
-
-
-
-      <div class="flex items-center justify-center w-[75%] mx-auto gap-20">
-        <div class="lg:w-3/5 pt-8 lg:pt-10 desktop:pt-28 ">
-          <h1
-            class="desktop:text-7xl font-bold lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
-          >
-            ACH E-wallet in your pockets
-            <span class="text-5xl">&#129297;</span>
-          </h1>
-          <p
-            class="lg:text-sm text-lg desktop:max-w-[491px] py-8 text-center lg:text-left mb-2"
-          >
-          When you wake up on a Friday and see that your salary
-          was automatically deposited to your bank account,
-          that’s ACH.
-          </p>
-          
-          <a
-            href="/"
-            class="btn font-medium uppercase px-2 py-3 lg:px-5 desktop:py-5 desktop:px-6"
-            ><span class="pr-2">&#128640;</span>Get our app</a
-          >
-        </div>
-
-        <div class="lg:w-2/5 pt-20 lg:pt-8">
-          <img src="assets/images/image 3.png" alt="image3">
+  
+        <div class="grow flex items-center justify-center flex-col lg:flex-row lg:w-4/5 mx-auto lg:gap-16">
+          <div class="lg:w-3/5 desktop:w-[70%] pt-8 lg:pt-10 desktop:pt-28 text-center lg:text-left">
+            <h1
+              class="desktop:text-7xl font-bold lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
+            >ACH E-wallet in your pockets<span class="text-5xl">&#129297;</span>
+            </h1>
+            <p
+              class="lg:text-sm text-lg desktop:max-w-[491px] py-8 text-center lg:text-left mb-2"
+            >
+            When you wake up on a Friday and see that your salary
+            was automatically deposited to your bank account,
+            that’s ACH.
+            </p>
+            
+            <a
+              href="/"
+              class="btn font-medium uppercase px-2 py-3 lg:px-5 desktop:py-5 desktop:px-6"
+              ><span class="pr-2">&#128640;</span>Get our app</a
+            >
+          </div>
+  
+          <div class="lg:w-2/5 pt-20 lg:pt-8">
+            <img src="assets/images/image 3.png" alt="image3">
+          </div>
         </div>
       </div>
-
     </section>
 
     <!-- Footer -->
@@ -389,7 +401,7 @@
       <div class="w-4/5 mx-auto">
 
         <!-- Brands -->
-        <div class="py-10 flex items-center justify-between">
+        <div class="py-10 flex items-center text-center justify-center desktop:flex-row flex-col lg:flex-nowrap gap-5 justify-between">
           <img src="assets/peer.png" alt="peer">
           <img src="assets/flutterwave.png" alt="flutterwave">
           <img src="assets/talentql.png" alt="talentql">
@@ -397,73 +409,83 @@
           <img src="assets/alt-school.png" alt="alt-school">
         </div>
 
-        <div class="mx-10 border-t border-b border-dirtywhite grid grid-cols-5 gap-14 py-14">
-            <div>
-              <div class="flex items-center space-x-2 pb-4">
-                <img src="assets/logo.png" alt="logo" />
-                <span class="text-white font-bold text-2xl">TechFin</span>
+        <div class="lg:mx-10 mx-5">
+           <div class="border-t border-b border-dirtywhite flex justify-between gap-8 py-14 desktop:flex-row desktop:flex-nowrap flex-wrap ">
+              <div>
+                <div class="flex items-center space-x-2 pb-4">
+                  <img src="assets/logo.png" alt="logo" />
+                  <span class="text-white font-bold text-2xl">TechFin</span>
+                </div>
+
+                <p class="text-sm text-justify lg:text-left lg:max-w-[193px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere viverra nec, sit est, tellus habitant. </p>
+              </div>
+              
+              <div>
+                <h3 class="footer-heading">Company</h3>
+                <ul class="pt-4 flex flex-col gap-5">
+                  <li><a href="/" class="footer-link">about</a></li>
+                  <li><a href="/" class="footer-link">FAQ</a></li>
+                  <li><a href="/" class="footer-link">contact us</a></li>
+                  <li><a href="/" class="footer-link">careers</a></li>
+                  <li><a href="/" class="footer-link">privacy policy</a></li>
+                </ul>
               </div>
 
-              <p class="text-sm max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere viverra nec, sit est, tellus habitant. </p>
-            </div>
-            
-            <div>
-              <h3 class="footer-heading">Company</h3>
-              <ul class="pt-4 flex flex-col gap-5">
-                <li><a href="/" class="footer-link">about</a></li>
-                <li><a href="/" class="footer-link">FAQ</a></li>
-                <li><a href="/" class="footer-link">contact us</a></li>
-                <li><a href="/" class="footer-link">careers</a></li>
-                <li><a href="/" class="footer-link">privacy policy</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="footer-heading">Products</h3>
-              <ul class="pt-4 flex flex-col gap-6">
-                <li><a href="/" class="footer-link">features</a></li>
-                <li><a href="/" class="footer-link">connect</a></li>
-                <li><a href="/" class="footer-link">pricing</a></li>
-                <li><a href="/" class="footer-link">download</a></li>
-              </ul>
-            </div>
+              <div>
+                <h3 class="footer-heading">Products</h3>
+                <ul class="pt-4 flex flex-col gap-6">
+                  <li><a href="/" class="footer-link">features</a></li>
+                  <li><a href="/" class="footer-link">connect</a></li>
+                  <li><a href="/" class="footer-link">pricing</a></li>
+                  <li><a href="/" class="footer-link">download</a></li>
+                </ul>
+              </div>
           
-
-          
-            <div class="grid-item">
-              <div class="flex flex-col">
-                <h3 class="footer-heading uppercase">need help</h3>
-                <span class="font-medium ">+234 81 333 0965</span>
-              </div>
-              <div class="flex flex-col">
-                <h3 class="footer-heading text-xs uppercase">need support</h3>
-                <span class="font-medium">hi@mosessmax.com</span>
-              </div>
-            </div>
-
-            <div class="grid-item">
-              <div class="flex flex-col">
-                <h3 class="footer-heading uppercase">follow us</h3>
-                <div class="flex items-center gap-6 text-white">
-                  <i class='bx bxl-twitter bx-sm icon'></i>
-                  <i class='bx bxl-instagram bx-sm  icon' ></i>
-                  <i class='bx bxl-linkedin bx-sm icon'></i>
+              <div class="grid-item gap-7">
+                <div class="flex flex-col gap-4">
+                  <h3 class="footer-heading uppercase">need help</h3>
+                  <span class="font-medium ">+234 81 333 0965</span>
+                </div>
+                <div class="flex flex-col gap-4">
+                  <h3 class="footer-heading text-xs uppercase">need support</h3>
+                  <span class="font-medium">hi@mosessmax.com</span>
                 </div>
               </div>
 
-              <div class="flex items-center justify-center">
-                <input type="email" name="email" id="email" placeholder="Enter your email address" class="outline-none px-3 py-3 text-xs bg-customBlack text-dirtywhite">
-                <input type="submit" value="GO" class="bg-lightGrey cursor-pointer px-3 py-2 ">
+              <div class="grid-item">
+                <div class="flex flex-col grow gap-7">
+                  <h3 class="footer-heading uppercase">follow us</h3>
+                  <div class="flex items-center gap-6 text-white">
+                    <i class='bx bxl-twitter bx-sm icon'></i>
+                    <i class='bx bxl-instagram bx-sm  icon' ></i>
+                    <i class='bx bxl-linkedin bx-sm icon'></i>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-center pt-5">
+                  <input type="email" name="email" id="email" placeholder="Enter your email address" class="email-input">
+                  <input type="submit" value="GO" class="bg-lightGrey cursor-pointer px-3 py-2 hover:ring-2 hover:ring-white">
+                </div>
+
               </div>
+           </div>
 
-            </div>
+           <div class="flex justify-between pt-12 lg:flex-row lg:text-left lg:gap-0 flex-col-reverse text-center gap-3">
+              <span class="text-sm font-medium uppercase">english/ngn</span>
 
-          
+              <p class="lg:max-w-[15rem] text-sm">(c) 2022 TechFin. All Right Reserved
+                Design by Adebayo Moses (mosessmax)</p>
+              
+           </div>
 
+           <p class="text-center py-5">
+             Website Developed by <span class="text-blue-700 animate-pulse">Oluwafemi Olukoya.</span>
+           </p>
         </div>
 
       </div>
     </section>
+
     <script src="main.js"></script>
   </body>
 </html>

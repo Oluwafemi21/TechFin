@@ -9,7 +9,7 @@
 }
 
 .nav-btn {
-  @apply py-2.5 px-8 w-full hover:bg-black hover:rounded-full 
+  @apply py-2.5 px-3 desktop:px-8 w-full hover:bg-black hover:rounded-full 
          hover:text-white cursor-pointer transition ease-in-out transition-[backgroundColor] delay-150;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .tab-header{
-  @apply font-bold sm:text-5xl text-3xl leading-[1.3] pt-1 lg:max-w-sm;
+  @apply font-bold sm:text-5xl text-3xl leading-[1.3] pt-1 desktop:max-w-sm;
 }
 
 .tab-para{
@@ -84,7 +84,11 @@
 }
 
 .footer-link{
-  @apply capitalize w-full bg-red-300 block;
+  @apply capitalize hover:text-dirtywhite;
+}
+
+.email-input{
+  @apply outline-none px-3 py-3 text-xs bg-customBlack text-white placeholder:text-dirtywhite;
 }
 
 .icon{

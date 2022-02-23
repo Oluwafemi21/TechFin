@@ -1,6 +1,9 @@
 const navs = document.querySelectorAll('.nav-btn');
 const tabs = document.querySelectorAll('.tab');
 const contents = document.querySelectorAll(".tab-changer");
+const menu = document.getElementById('menu');
+const closeBtn = document.getElementById('close');
+const navMenu = document.getElementById('nav-menu');
 
 
 navs.forEach((nav)=>{
@@ -21,4 +24,13 @@ tabs.forEach((tab, index)=>{
         contents.forEach(content => content.classList.remove('tab-active'));
         contents[index].classList.add("tab-active");
     })
+})
+
+
+menu.addEventListener('click',()=>{
+    navMenu.classList.remove('hidden');
+})
+
+closeBtn.addEventListener('click',()=>{
+    navMenu.classList.add('hidden');
 })
