@@ -12,11 +12,11 @@
     <link href="public/style.css" rel="stylesheet"/>
     <title>TechFin</title>
   </head>
-  <body class="bg-customBlack h-screen text-white font-body">
+  <body class="bg-customBlack  h-screen text-white font-body">
     <!-- Home Page -->
     <section class="min-h-screen flex flex-col">
-      <header class="lg:container mx-auto w-[90%]">
-        <nav class="flex items-center justify-between py-5">
+      <header class="mx-auto w-[90%] mb-14 lg:mb-0">
+        <nav class="flex items-center justify-between py-5 lg:relative fixed px-6 right-0 bg-lightBlue top-0 left-0 z-10 lg:px-0 lg:bg-transparent">
           <div class="flex items-center space-x-2">
             <img src="assets/logo.png" alt="logo" />
             <span class="text-white font-bold text-2xl">TechFin</span>
@@ -54,7 +54,7 @@
 
       <!-- Hamburger Menu -->
       <div class="bg-darkGrey animate-slideout text-white transition-all ease-in-out delay-500 fixed top-0 left-0 w-full h-full z-20 opacity-95 hidden lg:hidden" id="nav-menu">
-        <div class="lg:container w-[90%] mx-auto flex flex-col gap-14">
+        <div class="w-[90%] mx-auto flex flex-col gap-14">
           <div class="flex items-center justify-between py-5">
 
             <div class="flex items-center space-x-2">
@@ -67,7 +67,7 @@
             </svg>
   
           </div>
-          <ul class="flex flex-col items-center justify-center gap-8">
+          <ul class="flex flex-col items-center justify-center gap-14">
             <li><a href="#features">Features</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#connect">Connect</a></li>
@@ -86,25 +86,25 @@
           class="hero-container"
         >
           <!-- Grid 1 -->
-          <div class="lg:w-1/2 pt-8 lg:pt-10 desktop:pt-28 ">
+          <div class="lg:w-1/2 pt-8 desktop:pt-28 ">
             <div
-              class="flex flex-col items-start gap-4 lg:flex-row lg:items-center space-x-2 lg:space-x-5 pb-5 text-sm"
+              class="flex flex-col items-start gap-4 sm:flex-row sm:items-center space-x-2 sm:space-x-5 pb-5 text-sm sm:justify-center lg:justify-start"
             >
               <button class="btn lg:px-6 px-2 py-3 ring-2 ring-dirtywhite">
                 NEW UPDATE
               </button>
-              <p class="">Introducing wallets but for ACH</p>
+              <p>Introducing wallets but for ACH</p>
             </div>
             <div class="relative">
               <h1
-                class="desktop:text-7xl font-bold lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
+                class="desktop:text-7xl font-bold lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0 md:pt-8 lg:pt-0"
               >
                 ACH E-wallet in your pockets
                 <span class="text-5xl">&#129297;</span>
               </h1>
 
               <img
-                class="sm:absolute lg:right-16 sm:right-24 md:hidden lg:block"
+                class="sm:absolute lg:right-16 sm:right-24 md:right-36 lg:block md:mb-5 lg:mb-0"
                 src="assets/images/vector2.png"
                 alt="vector2"
               />
@@ -131,7 +131,7 @@
           </div>
 
           <!-- Grid 2 -->
-          <div class="lg:w-1/2 pt-10 desktop:pt-20 lg:pt-8">
+          <div class="lg:w-1/2 pt-10 desktop:pt-20 lg:pt-4 md:pt-12">
             <div class="relative flex items-center justify-center">
               <img
                 class="absolute -left-12 top-0 lg:left-12 lg:top-8 desktop:left-10 desktop:top-12"
@@ -163,14 +163,14 @@
           alt="highlight-vector"
         />
         <img
-          class="hidden lg:block absolute bottom-[4.5rem] desktop:right-[29%] lg:right-[27%]"
+          class="hidden lg:block absolute bottom-[4.5rem] desktop:right-[29%] lg:right-[30%] "
           src="assets/images/highlight_02.png"
           alt="highlight_02"
         />
 
         <!-- Bottom nav -->
         <div
-          class="hidden lg:block absolute bottom-0 left-[32%] max-w-screen-md bg-white text-black rounded-full py-3 px-2.5 mb-9"
+          class="hidden lg:block absolute bottom-0 left-[32%] bg-white text-black rounded-full py-3 px-2.5 mb-9"
         >
           <ul class="flex items-center gap-[2px] text-black">
             <li class="py-1">
@@ -192,7 +192,7 @@
     </section>
 
     <!-- Payment Automation page 2 -->
-    <section class="min-h-screen py-9" id="features">
+    <section class="min-h-screen pb-9 pt-24 lg:pb-0 lg:pt-0" id="features">
       <div class="w-[82%] mx-auto">
         <h1 class="text-4xl lg:text-7xl font-bold text-center max-w-screen-md mx-auto">
           Automate all your payments
@@ -269,10 +269,10 @@
     <!-- About page 3-->
     <section
       id="about"
-      class="lg:py-28 desktop:py-32 py-14 sm:min-h-screen overflow-x-hidden"
+      class="lg:py-28 desktop:py-32 pb-14 pt-24 sm:min-h-screen overflow-x-hidden"
     >
       <div
-        class="relative text-white flex flex-col lg:max-w-[70%] max-w-[80%] mx-auto"
+        class="relative text-white flex flex-col gap-8 lg:max-w-[70%] max-w-[80%] mx-auto"
       >
         <p class="about lg:max-w-[920px] pb-16">
           &#127974; Help businesses save time and cut costs. And, for nonprofits
@@ -289,14 +289,14 @@
         </p>
 
         <div
-          class="hidden md:block absolute -bottom-10 md:-right-32 lg:-right-48 h-24 w-24 rounded-full bg-darkBlue"
+          class="hidden md:block absolute -bottom-10 md:-right-32 lg:-right-64 h-24 w-24 rounded-full bg-darkBlue"
         ></div>
       </div>
     </section>
 
     <!-- Tab page 4 -->
-    <section class="min-h-screen lg:px-36 lg:pt-24 pt-8 pb-20" id="connect">
-      <div class="bg-darkGrey desktop:max-w-6xl md:w-full px-8 w-full">
+    <section class="min-h-screen lg:px-36 lg:pt-24 pt-14 pb-20" id="connect">
+      <div class="bg-darkGrey desktop:max-w-6xl md:w-full px-8 w-full mx-auto">
         <div class="features__tab">
           <p class="active-tab tab">Send Funds</p>
           <p class="tab">Receive Funds</p>
@@ -304,10 +304,10 @@
 
         <!-- Tab 1 -->
         <div
-          class="tab-changer tab-active gap-10 pt-20 lg:pb-28 animate-slidein items-center"
+          class="tab-changer tab-active gap-10 pt-20 lg:pb-28 animate-slidein items-center "
         >
           <!-- Tab Text Area -->
-          <div class="desktop:pl-36 text-center lg:text-left">
+          <div class="desktop:pl-36 text-center lg:text-left flex flex-col md:items-center lg:items-start">
             <p class="font-bold">— 890m Transactions Completed</p>
             <h2 class="tab-header">Connect your Debit Card</h2>
             <p class="tab-para">
@@ -321,7 +321,7 @@
           </div>
 
           <!-- Image -->
-          <div class="mt-8 pt-6">
+          <div class="mt-8 pt-6 flex items-center justify-center">
             <img
               class="pt-2 lg:pr-6"
               src="assets/images/image 4.png"
@@ -331,9 +331,10 @@
         </div>
 
         <!-- Tab 2 -->
-        <div class="tab-changer justify-between gap-30 lg:items-center desktop:items-start pt-16 pb-8 animate-slideout">
+        <div class="tab-changer justify-between gap-30 md:items-center desktop:items-start pt-16 pb-8 animate-slideout text-center">
+
           <!-- Tab Text Area -->
-          <div class="desktop:pl-36 text-center lg:text-left desktop:pt-16 lg:w-1/2">
+          <div class="desktop:pl-36 text-center lg:text-left desktop:pt-16 lg:w-1/2 flex flex-col md:items-center lg:items-start">
             <p class="font-bold">— 890m Transactions Completed</p>
             <h2 class="tab-header">Connect your Debit Card</h2>
             <p class="tab-para">
@@ -346,7 +347,7 @@
           </div>
 
           <!-- Image -->
-          <div class="lg:w-2/5 flex items-center justify-center lg:block sm:mt-0 mt-8">
+          <div class="pt-8 lg:pt-0 lg:w-2/5 flex items-center justify-center lg:block sm:mt-0 mt-8">
             <img class="" src="assets/images/image 5.png" alt="Receive funds" />
           </div>
 
@@ -357,19 +358,20 @@
     </section>
 
     <!-- Download page 5 -->
-    <section class="min-h-screen" id="download">
-      <div class="w-4/5 mx-auto pb-10 lg:pb-0 flex flex-col lg:h-screen">
-        <div class="flex items-center justify-center flex-col lg:flex-row space-x-5 pt-9">
+    <section class="relative" id="download">
+      <div class="w-4/5 mx-auto pb-36 z-20 pt-14 lg:pt-0">
+
+        <div class="flex items-center justify-center flex-col md:flex-row md:max-w-lg md:mx-auto space-x-5 pt-9">
           <div class="bg-black h-9 w-9 rounded-full flex items-center justify-center">
             <span class="font-icon text-lg">i</span>
           </div>
           <p class="tab-para">We are currently in BETA, you may encounter some issues if you go ahead and launch now.</p>
         </div>
   
-        <div class="grow flex items-center justify-center flex-col lg:flex-row lg:w-4/5 mx-auto lg:gap-16">
+        <div class="flex items-center justify-center flex-col lg:flex-row lg:w-4/5 mx-auto lg:gap-16">
           <div class="lg:w-3/5 desktop:w-[70%] pt-8 lg:pt-10 desktop:pt-28 text-center lg:text-left">
             <h1
-              class="desktop:text-7xl font-bold lg:text-6xl lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
+              class="desktop:text-7xl font-bold lg:text-left text-4xl sm:text-5xl sm:text-center pt-5 sm:pt-0"
             >ACH E-wallet in your pockets<span class="text-5xl">&#129297;</span>
             </h1>
             <p
@@ -392,16 +394,24 @@
           </div>
         </div>
       </div>
+
+      <div class="hidden absolute top-32 -z-10 lg:flex items-center justify-center w-full mx-auto ">
+       <div class="rounded-full h-[1000px] w-[1000px] bg-darkGrey/50 flex items-center justify-center">
+         <div class="h-[650px] w-[650px] rounded-full bg-darkGrey flex items-center justify-center gap-1">
+           <div class="h-[350px] w-[350px] rounded-full bg-lightGrey/50"></div>
+         </div>
+       </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <section class="min-h-screen bg-darkGrey pt-16 " id="footer">
+    <section class="bg-darkGrey pt-16 " id="footer">
       <p class="text-center text-dirtywhite text-sm font-medium">Inspired by Global Brands</p>
 
       <div class="w-4/5 mx-auto">
 
         <!-- Brands -->
-        <div class="py-10 flex items-center text-center justify-center desktop:flex-row flex-col lg:flex-nowrap gap-5 justify-between">
+        <div class="py-10 flex items-center text-center justify-center desktop:flex-row flex-wrap gap-5 desktop:justify-between">
           <img src="assets/peer.png" alt="peer">
           <img src="assets/flutterwave.png" alt="flutterwave">
           <img src="assets/talentql.png" alt="talentql">
@@ -452,7 +462,7 @@
                 </div>
               </div>
 
-              <div class="grid-item">
+              <div class="grid-item w-full desktop:w-auto">
                 <div class="flex flex-col grow gap-7">
                   <h3 class="footer-heading uppercase">follow us</h3>
                   <div class="flex items-center gap-6 text-white">
@@ -462,7 +472,7 @@
                   </div>
                 </div>
 
-                <div class="flex items-center justify-center pt-5">
+                <div class="flex items-center justify-center w-full desktop:w-auto pt-5">
                   <input type="email" name="email" id="email" placeholder="Enter your email address" class="email-input">
                   <input type="submit" value="GO" class="bg-lightGrey cursor-pointer px-3 py-2 hover:ring-2 hover:ring-white">
                 </div>
@@ -478,7 +488,7 @@
               
            </div>
 
-           <p class="text-center py-5">
+           <p class="text-center py-8">
              Website Developed by <span class="text-blue-700 animate-pulse">Oluwafemi Olukoya.</span>
            </p>
         </div>

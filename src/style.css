@@ -23,7 +23,7 @@
 }
 
 .hero-container{
-  @apply w-[82%] mx-auto lg:flex-row flex-col-reverse flex items-center justify-between lg:gap-16 gap-32;
+  @apply w-[82%] mx-auto lg:flex-row flex-col-reverse flex items-center justify-between lg:gap-16 gap-32 md:gap-44;
 }
 
 .underlined_text {
@@ -68,11 +68,11 @@
 }
 
 .tab-para{
-  @apply text-dirtywhite font-medium lg:text-left text-justify sm:text-sm text-base pt-3 pb-5 lg:max-w-[338px];
+  @apply text-dirtywhite font-medium md:text-center lg:text-left text-justify sm:text-sm text-base pt-3 pb-5 lg:max-w-[338px];
 }
 
 .about{
-  @apply desktop:text-[40px] desktop:leading-[3rem] font-bold text-xl md:text-4xl;
+  @apply desktop:text-[40px] desktop:leading-[3rem] font-bold text-3xl md:text-4xl;
 }
 
 .grid-item{
@@ -88,7 +88,7 @@
 }
 
 .email-input{
-  @apply outline-none px-3 py-3 text-xs bg-customBlack text-white placeholder:text-dirtywhite;
+  @apply outline-none px-3 py-3 text-xs bg-customBlack text-white placeholder:text-dirtywhite w-full desktop:w-auto;
 }
 
 .icon{
