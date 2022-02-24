@@ -4,6 +4,7 @@ const contents = document.querySelectorAll(".tab-changer");
 const menu = document.getElementById('menu');
 const closeBtn = document.getElementById('close');
 const navMenu = document.getElementById('nav-menu');
+const hamburgerLink = document.querySelectorAll('.hamburger-link');
 
 
 navs.forEach((nav)=>{
@@ -26,11 +27,16 @@ tabs.forEach((tab, index)=>{
     })
 })
 
-
 menu.addEventListener('click',()=>{
     navMenu.classList.remove('hidden');
 })
 
 closeBtn.addEventListener('click',()=>{
     navMenu.classList.add('hidden');
+})
+
+hamburgerLink.forEach((link)=>{
+    link.addEventListener('click',()=>{
+        navMenu.classList.add('hidden');
+    })
 })
